@@ -1,0 +1,134 @@
+#palette1 {
+    font-family: cursive;
+    text-align: center;
+}
+
+#palette1-color1 {
+    background-color: #006D77;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette1-color2 {
+    background-color: #83C5BE;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette1-color3 {
+    background-color: #EDF6F9;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette1-color4 {
+    background-color: #FFDDD2;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette1-color5 {
+    background-color: #E29578;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#palette2-color1 {
+    background-color: #177E89;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette2-color2 {
+    background-color: #084C61;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette2-color3 {
+    background-color: #DB3A34;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette2-color4 {
+    background-color: #FFC857;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette2-color5 {
+    background-color: #323031;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette3 {
+    font-family: fantasy;
+    text-align: center;
+}
+
+#palette3-color1 {
+    background-color: #D5DFE5;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette3-color2 {
+    background-color: #C9B1BD;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette3-color3 {
+    background-color: #B49594;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette3-color4 {
+    background-color: #7F9172;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+
+#palette3-color5 {
+    background-color: #567568;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
