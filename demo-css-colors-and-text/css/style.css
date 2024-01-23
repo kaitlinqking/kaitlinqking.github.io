@@ -1,0 +1,41 @@
+#first-paragraph {
+    color: darkgoldenrod;
+    background-color: lightcyan;
+    font-style: italic;
+    text-align: right;
+}
+
+#second-paragraph {
+    color: #7d088f;
+    background-color: bisque;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#bold-paragraph {
+    font-weight: bold;
+    background-color: blanchedalmond;
+    font-size: 1.5em;
+    text-decoration: line-through;
+    background: linear-gradient(#ff00a2, purple);
+}
+
+#span1 {
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#span2 {
+    font-style: italic;
+    text-decoration: underline overline #ff28bb;
+}
+
+#span3 {
+    background-color: #00ff2f;
+}
+
+#span4 {
+    color: #ca9a31;
+    font-style: italic;
+}
