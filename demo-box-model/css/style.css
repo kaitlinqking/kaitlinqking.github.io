@@ -1,0 +1,16 @@
+div {
+    border: 10px dashed #897bd8;
+    margin: 24px 0px;
+    padding: 24px 36px;
+    background-color: #d8adad;
+}
+p {
+    /* border: 8px dotted lightsalmon; */
+    border-radius: 48px;
+    margin: 60px;
+    padding: 20px 24px;
+    background-color: #dd7f3c;
+}
+#flower {
+    border-radius: 50%;
+}
