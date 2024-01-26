@@ -6,6 +6,42 @@
 
     Good luck, and have fun!
 */
-.note-blue {
+.post-it {
+    display: inline-block;
+    width: 210px;
+    height: 210px;
+    margin: 24px;
+    padding: 24px;
+}
+.blue {
     background-color: #aeeaea;
+    font-family: sans-serif;
+}
+.pink {
+    background-color: #e7a7bc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.yellow {
+    background-color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.lavender {
+    background-color: lavender;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+.green {
+    background-color: #a4daa4;
+    text-align: center;
+}
+.post-it-none {
+    background-color: transparent;
+    display: inline-block;
+    width: 210px;
+    height: 210px;
+    margin: 24px;
+    padding: 24px;
+}
+.cat1 {
+    width: 150px;
 }
