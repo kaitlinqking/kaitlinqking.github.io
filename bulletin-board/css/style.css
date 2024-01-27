@@ -43,6 +43,7 @@
 }
 .cat1 {
     width: 80%;
+    border-radius: 10%;
 }
 .linethrough {
     text-decoration: line-through;
