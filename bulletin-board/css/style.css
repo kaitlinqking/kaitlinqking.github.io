@@ -6,6 +6,10 @@
 
     Good luck, and have fun!
 */
+.row1,
+.row2 {
+    text-align: center;
+}
 .post-it {
     display: inline-block;
     width: 230px;
@@ -13,6 +17,7 @@
     margin: 24px;
     padding: 24px;
     box-shadow: -4px -4px 4px #00000033;
+    text-align: left;
 }
 .blue {
     background-color: #aeeaea;
