@@ -8,10 +8,11 @@
 */
 .post-it {
     display: inline-block;
-    width: 210px;
-    height: 210px;
+    width: 230px;
+    height: 230px;
     margin: 24px;
     padding: 24px;
+    box-shadow: -4px -4px 4px #00000033;
 }
 .blue {
     background-color: #aeeaea;
@@ -26,22 +27,51 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .lavender {
-    background-color: lavender;
+    background-color: #cfcfef;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
 }
 .green {
     background-color: #a4daa4;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+.catto {
+    margin: 20px;
     text-align: center;
 }
-.post-it-none {
-    background-color: transparent;
-    display: inline-block;
-    width: 210px;
-    height: 210px;
-    margin: 24px;
-    padding: 24px;
-}
 .cat1 {
-    width: 150px;
+    width: 80%;
+}
+.linethrough {
+    text-decoration: line-through;
+}
+.underline {
+    text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
+.push-pin {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: auto;
+}
+.pin-style1 {
+    background-color: #c26262;
+    box-shadow: -2px -2px 2px #00000033;
+}
+.pin-style2 {
+    background-color: #4a884a;
+    box-shadow: -2px -2px 2px #00000033;
+}
+.pin-style3 {
+    background-color: #63215b;
+    box-shadow: -2px -2px 2px #00000033;
+}
+.pin-style4 {
+    background-color: #2323b5;
+    box-shadow: -2px -2px 2px #00000033;
 }
