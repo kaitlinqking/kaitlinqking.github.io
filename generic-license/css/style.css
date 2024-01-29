@@ -1,0 +1,113 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+#license {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 700px;
+    box-shadow: 8px 8px 5px #00000033;
+    background: linear-gradient(135deg, #fcc871, #ef9253);
+}
+#content {
+    margin: 15px;
+}
+#state {
+    color: #000080;
+    display: block;
+}
+#info {
+    text-align: center;
+}
+#left-side {
+    width: 65%;
+    display: inline-block;
+}
+#right-side {
+    width: 34%;
+    display: inline-block;
+}
+#driver-license {
+    background-color: #000080;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+#id-and-expiration {
+    padding-top: 5px;
+}
+#license-no {
+    width: 48%;
+    display: inline-block;
+    text-align: left;
+}
+#expires {
+    width: 48%;
+    display: inline-block;
+    text-align: left;
+}
+#address {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+#personal-info {
+    height: 100px;
+}
+#small-pic {
+    width: 15%;
+    display: inline-block;
+}
+#small-pic2 {
+    width: 80px;
+    display: inline-block;
+}
+#data-fields {
+    width: 80%;
+    display: inline-block;
+}
+#data-left {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+}
+#data-right {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+}
+#signature {
+    text-align: center;
+    padding-top: 5px;
+}
+#large-pic {
+    width: 150px;
+}
+#donor-and-real-id {
+    width: 150px;
+    display: inline-block;
+}
+#donor {
+    color: #ff0000;
+    display: inline-block;
+    padding-right: 15px;
+}
+#real-id {
+    display: inline-block;
+    color: white;
+    background-color: #ffd800;
+    padding: 2px;
+    border-radius: 50%;
+}
+.bold-red {
+    color: #ff0000;
+    font-weight: bold;
+}
+.field {
+    color: #000080;
+}
