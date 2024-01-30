@@ -1,0 +1,39 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+#flowers {
+    width: 100px;
+    background-color: bisque;
+    border: 10px solid #8a2839;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: inset 0px 0px 16px 4px #a1a1a1;
+}
+#text {
+    width: 150px;
+    height: 90px;
+    background-color: #d7d7d7;
+    border: 10px solid #312e2e;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+#content {
+    font-family: cursive;
+    font-size: 90%;
+}
+#landscape {
+    width: 150px;
+    background-color: beige;
+    border: 15px solid #8b7152;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: inset 0px 0px 12px 5px #a18e8e;
+}
