@@ -60,6 +60,7 @@
     padding-bottom: 10px;
     font-weight: bold;
     font-family: sans-serif;
+    margin-left: 10px;
 }
 #personal-info {
     height: 100px;
@@ -99,11 +100,14 @@
 #donor-and-real-id {
     width: 150px;
     display: inline-block;
+    padding-top: 5px;
 }
 #donor {
     color: #ff0000;
     display: inline-block;
     padding-right: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 #real-id {
     display: inline-block;
@@ -115,6 +119,7 @@
 .bold-red {
     color: #ff0000;
     font-weight: bold;
+    font-family: sans-serif;
 }
 .field {
     font-family: sans-serif;
