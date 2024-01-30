@@ -6,6 +6,8 @@
 
     Good luck, and have fun!
 */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 #license {
     border: 3px solid black;
     border-radius: 20px;
@@ -19,6 +21,7 @@
 #state {
     color: #000080;
     display: block;
+    margin: 0px;
 }
 #info {
     text-align: center;
@@ -36,6 +39,7 @@
     color: white;
     padding: 10px;
     margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #id-and-expiration {
     padding-top: 5px;
@@ -53,8 +57,9 @@
 #address {
     text-align: left;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 #personal-info {
     height: 100px;
@@ -85,9 +90,11 @@
 #signature {
     text-align: center;
     padding-top: 5px;
+    font-family: "La Belle Aurore", cursive;
+    font-size: large;
 }
 #large-pic {
-    width: 150px;
+    width: 200px;
 }
 #donor-and-real-id {
     width: 150px;
@@ -110,5 +117,9 @@
     font-weight: bold;
 }
 .field {
+    font-family: sans-serif;
     color: #000080;
+}
+h1 {
+    font-size: 40px;
 }
