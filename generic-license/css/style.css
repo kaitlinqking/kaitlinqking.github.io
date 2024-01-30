@@ -66,6 +66,7 @@
 #small-pic2 {
     width: 80px;
     display: inline-block;
+    opacity: 0.60;
 }
 #data-fields {
     width: 80%;
