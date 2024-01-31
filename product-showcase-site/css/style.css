@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -42,9 +42,11 @@ body {
 
 #s1-p1 {
     font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 #s1-p2 {
+    font-family: "Red Hat Display", sans-serif;
     width: 300px;
     margin: 0px auto;
 }
@@ -66,9 +68,11 @@ body {
 
 #s2-p1 {
     font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 #s2-p2 {
+    font-family: "Red Hat Display", sans-serif;
     width: 300px;
     margin: 0px auto;
 }
@@ -90,9 +94,11 @@ body {
 
 #s3-p1 {
     font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 #s3-p2 {
+    font-family: "Red Hat Display", sans-serif;
     width: 300px;
     margin: 0px auto;
 }
