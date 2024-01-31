@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.single-column {
+    width: 60%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#logo {
+    background-color: #cc2125;
+    padding: 30px;
+}
+
+#maruchan {
+    width: 400px;
+}
+
+#section1 {
+    padding: 48px 0px;
+    background-color: #fff6ea;
+}
+
+#chili {
+    width: 40%;
+}
+
+#s1-h1 {
+    color: #71be51;
+    font-family: "Dangrek", sans-serif;
+    font-size: 60px;
+}
+
+#s1-p1 {
+    font-weight: bold;
+}
+
+#s1-p2 {
+    width: 300px;
+    margin: 0px auto;
+}
+
+#section2 {
+    padding: 48px 0px;
+    background-color: aliceblue;
+}
+
+#soy-sauce {
+    width: 40%;
+}
+
+#s2-h1 {
+    color: #3c96ff;
+    font-family: "Dangrek", sans-serif;
+    font-size: 60px;
+}
+
+#s2-p1 {
+    font-weight: bold;
+}
+
+#s2-p2 {
+    width: 300px;
+    margin: 0px auto;
+}
+
+#section3 {
+    padding: 48px 0px;
+    background-color: #fff6ea;
+}
+
+#chicken {
+    width: 40%;
+}
+
+#s3-h1 {
+    color: #fe773e;
+    font-family: "Dangrek", sans-serif;
+    font-size: 60px;
+}
+
+#s3-p1 {
+    font-weight: bold;
+}
+
+#s3-p2 {
+    width: 300px;
+    margin: 0px auto;
+}
