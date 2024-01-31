@@ -16,6 +16,14 @@
     margin-right: auto;
 }
 
+/* 
+Another Solution -->
+#column-d3 {
+    width: 50%;
+    margin: 0px auto;
+}
+*/
+
 /* Drill 4 - Write your code solution below */
 #container-d4 {
     width: 50%;
