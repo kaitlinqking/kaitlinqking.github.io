@@ -5,12 +5,12 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    background-color: #e2b9b9;
+    background-color: #b9e0e0;
 }
 
 #grid-layout {
     display: grid;
-    grid-template-columns: 1fr 650px 250px 1fr;
+    grid-template-columns: 1fr 850px 250px 1fr;
     grid-template-areas: ". content sidebar .";
     margin: 36px 0px;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 #sidebar-content h2 {
-    background-color: #5f486b;
+    background-color: #066963;
     color: #f6f5f5;
     padding: 12px;
     font-size: 18px;
@@ -31,28 +31,24 @@ body {
 #sidebar-content ul {
     background-color: #e8e8e8;
     margin: 0px 0px 36px;
-    border: 1px solid #5f486b;
+    border: 1px solid #066963;
     list-style-type: none;
     padding: 0px 12px;
 }
 
 #sidebar-content a {
     text-decoration: none;
-    color: #5f486b;
+    color: #066963;
 }
 
 #sidebar-content li {
     padding: 8px 0px;
-    border-bottom: 1px solid #5f486b;
+    border-bottom: 1px solid #066963;
 }
 
 #sidebar-content li:hover {
     background-color: #cacaca;
     padding: 10px;
-
-/* If you add padding, it makes the links bigger, in this case. Be careful with 
-this because you don't want to move too much on the page - pushes elements down 
-and makes it jittery.*/
 } 
 
 #sidebar-content li:last-child {
@@ -60,7 +56,45 @@ and makes it jittery.*/
 }
 
 #main-content {
+    padding: 48px;
     margin: 0px 36px;
     grid-area: content;
+    border: 2px solid #066963;
+    border-radius: 20px;
 }
 
+#main-content h1 {
+    color: #064d48;
+}
+
+#pic1 {
+    width: 100%;
+}
+
+#author-and-date {
+    font-size: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #066963;
+    margin-bottom: 30px;
+}
+
+#main-content a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.subheading {
+    padding: 20px 0px;
+}
+
+#pic2 {
+    width: 75%;
+}
+
+#pic3 {
+    width: 100%;
+}
