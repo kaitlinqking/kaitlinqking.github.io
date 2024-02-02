@@ -31,12 +31,14 @@ body {
     padding: 12px;
     font-size: 18px;
     margin: 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #sidebar-content ul {
     background-color: #f6f5f5;
     margin: 0px 0px 36px;
     border: 1px solid #066963;
+    border-radius: 0px 0px 20px 20px;
     list-style-type: none;
     padding: 0px 12px;
 }
