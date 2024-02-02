@@ -56,6 +56,21 @@ body {
     padding-bottom: 8px;
 }
 
+#container1-left-side {
+    padding: 10px;
+}
+
+#container1-right-side {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+#main-pic {
+    width: 100%;
+}
+
 #s1-left-side {
     width: 250px;
     background-color: #cadede;
@@ -66,7 +81,6 @@ body {
 }
 
 #s1-right-side {
-    flex: 1;
     padding: 10px;
 }
 
