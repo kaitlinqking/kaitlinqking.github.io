@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 650px 250px 1fr;
+    grid-template-areas: ". content sidebar .";
+    margin: 36px 0px;
+}
+
+#sidebar-content {
+    grid-area: sidebar;
+    padding: 18px;
+}
+
+#sidebar-content h2 {
+    background-color: #5f486b;
+    color: #f6f5f5;
+    padding: 12px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#sidebar-content ul {
+    background-color: #e8e8e8;
+    margin: 0px 0px 36px;
+    border: 1px solid #5f486b;
+    list-style-type: none;
+    padding: 0px 12px;
+}
+
+#sidebar-content a {
+    text-decoration: none;
+    color: #5f486b;
+}
+
+#sidebar-content li {
+    padding: 8px 0px;
+    border-bottom: 1px solid #5f486b;
+}
+
+#sidebar-content li:hover {
+    background-color: #cacaca;
+    padding: 10px;
+
+/* If you add padding, it makes the links bigger, in this case. Be careful with 
+this because you don't want to move too much on the page - pushes elements down 
+and makes it jittery.*/
+} 
+
+#sidebar-content li:last-child {
+    border-bottom: 0px;
+}
+
+#main-content {
+    margin: 0px 36px;
+    grid-area: content;
+}
+
