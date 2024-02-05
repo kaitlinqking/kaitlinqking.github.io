@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Josefin Sans";
 }
 
 #grid-layout {
@@ -29,10 +31,10 @@ body {
 }
 
 #header #tube {
-    background-color: red;
+    background-color: #0084ff;
     color: white;
-    padding: 4px;
-    border-radius: 12px;
+    padding: 6px;
+    border-radius: 15px 6px 15px 6px;
 }
 
 #sidebar {
@@ -55,7 +57,7 @@ body {
 }
 
 #sidebar ul a:hover {
-    background-color: #eeeeee;
+    background-color: #d5eaf3;
     border-radius: 12px;
 }
 
