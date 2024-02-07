@@ -69,6 +69,7 @@ body {
 
 #main-pic {
     width: 100%;
+    border: 1px solid #6a6a6a;
 }
 
 #s1-left-side {
@@ -115,4 +116,8 @@ body {
 
 #s2-image {
     width: 100%
+}
+
+#gameplay {
+    width: calc(100% - 280px);
 }

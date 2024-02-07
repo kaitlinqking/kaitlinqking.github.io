@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#container-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-column right-column";
+}
+
+.gallery-image {
+    width: 80%;
+}
