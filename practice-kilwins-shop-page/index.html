@@ -5,12 +5,47 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Practice: Kilwins "Shop" Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="single-column-layout">
+        <div class="single-column-layout">
             <div id="nav-bar">
-
+                <div id="logo-container">
+                    <img 
+                        id="logo-pic"
+                        src="images/kilwins-logo.png"
+                        alt="Kilwins Logo"
+                    >
+                </div>
+                <div id="nav-links">
+                    <p>
+                        <span class="link">
+                            <a href="#">
+                                Shop <i class="fa-solid fa-angles-down"></i>
+                            </a>
+                        </span>
+                        <span class="link">
+                            <a href="#">
+                                Products <i class="fa-solid fa-angles-down"></i>
+                            </a>
+                        </span>
+                        <span class="link">
+                            <a href="#">About Us</a>
+                        </span>
+                        <span class="link">
+                            <a href="#">Locations</a>
+                        </span>
+                        <span class="link">
+                            <a href="#">Chocolate Tours</a>
+                        </span>
+                        <span id="button">
+                            <a href="#">
+                                OWN A STORE
+                            </a>
+                        </span>
+                    </p>
+                </div>
             </div>
             <div id="main-content">
                 <p>
@@ -19,9 +54,9 @@
                     <span class="breadcrumb">Shop</span>
                 </p>
                 <h1 id="shop-title">Shop</h1>
-                <div id="container-gallery">
+                <div id="container-main-gallery">
                     <div id="left-columm">
-                        <div id="valentines-day-container">
+                        <div class="gallery-container">
                             <img
                                 class="gallery-image"
                                 src="images/Teaser_Valentines Day_0.jpeg"
@@ -34,7 +69,7 @@
                                 Perfect for the one you love
                             </p>
                         </div>
-                        <div id="tuttle-nut-container">
+                        <div class="gallery-container">
                             <img
                                 class="gallery-image"
                                 src="images/Teaser_Generic2_0.jpeg"
@@ -49,7 +84,7 @@
                         </div>
                     </div>
                     <div id="right-column">
-                        <div id="popular-items-container">
+                        <div class="gallery-container">
                             <img
                                 class="gallery-image"
                                 src="images/Teaser_Generic15_0.jpeg"
@@ -62,7 +97,7 @@
                                 Explore our most popular items
                             </p>
                         </div>
-                        <div id="mackinac-container">
+                        <div class="gallery-container">
                             <img
                                 class="gallery-image"
                                 src="images/Teaser_Generic3_0.jpeg"
