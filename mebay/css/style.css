@@ -22,7 +22,6 @@ body {
     grid-area: header;
     text-align: center;
     border-bottom: 1px solid #c4c4c4;
-    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
@@ -49,7 +48,7 @@ body {
 
 #image-col {
     grid-area: image;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
 }
 
 #image-col-flexbox {
@@ -59,7 +58,7 @@ body {
 #first-image-col {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding-right: 30px;
 }
 
 .small-pic {
@@ -82,7 +81,7 @@ body {
 
 #product-info-col {
     grid-area: product;
-    padding: 0px 20px;
+    padding: 20px;
 }
 
 #product-info-col h2 {
@@ -173,7 +172,7 @@ body {
 
 #sidebar-col {
     grid-area: sidebar;
-    margin-right: 20px;
+    padding: 20px 40px 20px 20px;
 }
 
 #sidebar-col a {
