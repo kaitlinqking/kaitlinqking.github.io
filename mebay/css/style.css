@@ -21,7 +21,7 @@ body {
 #header {
     grid-area: header;
     text-align: center;
-    border-bottom: 1px solid #a9a7a7;
+    border-bottom: 1px solid #c4c4c4;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -87,7 +87,7 @@ body {
 
 #product-info-col h2 {
     padding-bottom: 10px;
-    border-bottom: 1px solid #a9a7a7;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 #product-info-col a {
@@ -99,7 +99,7 @@ body {
 }
 
 #quantity-box {
-    border: 1px solid #a9a7a7;
+    border: 1px solid #c4c4c4;
     background-color: #fafafa;
     padding: 10px 15px;
     margin: 4px;
@@ -181,7 +181,7 @@ body {
 }
 
 #seller-info {
-    border: 1px solid #a9a7a7;
+    border: 1px solid #c4c4c4;
     border-radius: 12px;
     padding: 20px;
     margin: 20px;
@@ -189,7 +189,7 @@ body {
 }
 
 #mebay-guarantee {
-    border: 1px solid #a9a7a7;
+    border: 1px solid #c4c4c4;
     border-radius: 12px;
     padding: 20px;
     margin: 20px;
