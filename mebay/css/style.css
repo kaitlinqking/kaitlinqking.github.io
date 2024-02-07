@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -21,6 +23,8 @@ body {
     text-align: center;
     border-bottom: 1px solid #a9a7a7;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 #header .pink {
@@ -50,6 +54,11 @@ body {
     text-align: center;
 }
 
+#main-pic {
+    border: 1px solid #a9a7a7;
+    border-radius: 12px;
+}
+
 #product-info-col {
     grid-area: product;
 }
@@ -76,7 +85,7 @@ body {
 }
 
 #price {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -94,7 +103,7 @@ body {
     background-color: #0053a0;
     border-radius: 24px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #buy-button a {
@@ -103,9 +112,7 @@ body {
 }
 
 #buy-button a:hover {
-    background-color: white;
-    color: #0053a0;
-    border: 1px solid #0053a0;
+    background-color: #2b0eaf;
     border-radius: 24px;
 }
 
@@ -113,7 +120,7 @@ body {
     background-color: #3498ca;
     border-radius: 24px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #cart-button a {
@@ -122,9 +129,7 @@ body {
 }
 
 #cart-button a:hover {
-    background-color: white;
-    color: #3498ca;
-    border: 1px solid #3498ca;
+    background-color: #2b0eaf;
     border-radius: 24px;
 }
 
@@ -140,9 +145,7 @@ body {
 }
 
 #watchlist-button a:hover {
-    background-color: #3665f3;
-    color: white;
-    border: 1px solid #3665f3;
+    background-color: #eae7e7;
     border-radius: 24px;
 }
 
