@@ -49,18 +49,40 @@ body {
 
 #image-col {
     grid-area: image;
-    width: 100%;
     padding: 20px;
-    text-align: center;
+}
+
+#image-col-flexbox {
+    display: flex;
+}
+
+#first-image-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.small-pic {
+    width: 110px;
+    padding: 5px;
+    margin: 10px 0px;
+    border: 1px solid #c4c4c4;
+    border-radius: 12px;
 }
 
 #main-pic {
-    border: 1px solid #a9a7a7;
+    width: 100%;
+    min-width: 200px;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #c4c4c4;
     border-radius: 12px;
 }
 
 #product-info-col {
     grid-area: product;
+    padding: 0px 20px;
 }
 
 #product-info-col h2 {
