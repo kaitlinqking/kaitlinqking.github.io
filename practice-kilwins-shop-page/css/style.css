@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Noto Serif', serif;
     color: #4f4f4f;
     /* background-image: url();
     background-color: #eee0ce; */
@@ -24,6 +26,9 @@ body {
     padding: 8px;
     box-shadow: 4px 4px 10px #a7a7a733;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
 
 #logo-container {
@@ -42,7 +47,8 @@ body {
 
 .link a:hover {
     color: #7a0b06;
-    text-decoration: underline;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #7a0b06;
 }
 
 .link i {
@@ -59,6 +65,18 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
+}
+
+.breadcrumb a {
+    color: #4f4f4f;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+#main-content i {
+    font-size: 8px;
 }
 
 #container-main-gallery {
