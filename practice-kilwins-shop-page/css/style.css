@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 }
 
 .single-column-layout {
-    width: 60%;
+    width: 40%;
     min-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -81,11 +81,12 @@ body {
 
 #container-main-gallery {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .gallery-container {
     border: 1px solid #d6d5d58a;
-    margin: 20px 0px;
+    margin: 20px 10px;
     padding: 0px 0px 20px 0px;
     display: flex;
     flex-direction: column;
@@ -98,5 +99,5 @@ body {
 }
 
 .italic {
-    font-style: italic;
+    font-family: "Bad Script", cursive;
 }
