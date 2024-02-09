@@ -1,0 +1,122 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+
+.card-style-3 {
+    width: 350px;
+    background-color: antiquewhite;
+    padding: 0px 10px 10px;
+    margin: 16px;
+    border: 16px solid #ffd609;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-style-3 img {
+    width: 100%;
+    border: 6px solid #daa521;
+}
+
+.card-style-3 .pokemon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-style-3 h2 {
+    margin-bottom: 0px;
+}
+
+.health {
+    font-size: 18px;
+    padding-top: 18px;
+}
+
+.details {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 4px;
+    background: linear-gradient(
+        -45deg,
+        #d9a51f,
+        #eeca6d,
+        #d9a51f
+    );
+}
+
+.attack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 14px;
+    border-bottom: 2px solid black;
+    flex: 1;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.data {
+    font-size: 12px;
+    margin-top: 10px;
+    border: 2px solid #daa521;
+    padding: 4px;
+}
+
+.power {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#pokemon-card-1 {
+    background: linear-gradient(
+        -45deg,
+        #8ae88a,
+        #248c23,
+        #8ae88a
+    );
+}
+
+#pokemon-card-2 {
+    background: linear-gradient(
+        -45deg,
+        #8ae88a,
+        #248c23,
+        #8ae88a
+    );
+}
+
+#pokemon-card-3 {
+    background: linear-gradient(
+        -45deg,
+        #FFA105,
+        #ff4600,
+        #FFA105
+    );
+}
+
+#pokemon-card-4 {
+    background: linear-gradient(
+        -45deg,
+        #09fcfe,
+        #4fbdbd,
+        #09fcfe
+    );
+}
