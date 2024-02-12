@@ -42,8 +42,9 @@ body {
     background: linear-gradient(
         45deg, 
         #52839d, 
-        #f6d1cd);
-    border: 3px solid black;
+        #f6d1cd
+    );
+    border: 3px solid #333333;
     border-radius: 50px;
     color: #333333;
     text-decoration: none;
@@ -88,7 +89,7 @@ body {
     text-decoration: none;
     padding: 24px;
     font-size: 1vw;
-    margin: 5vh 5vw 15vh 5vw;
+    margin: 5vh 15vw 5vh 5vw;
 }
 
 #hero-3 {
@@ -102,7 +103,7 @@ body {
 #hero-3 .hero-content {
     position: absolute;
     top: 5%;
-    left: 60%;
+    left: 55%;
     color: #e8e5e5;
 }
 
