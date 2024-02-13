@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -37,15 +39,16 @@ body {
 }
 
 #hero-content h4 {
-    font-size: 1.5vw;
-    font-style: italic;
+    font-size: 1vw;
 }
 
 h3 {
-    margin-top: 72px;
-    padding: 36px;
-    color: black;
-    background-color: #f0ffff;
+    margin-top: 84px;
+    padding: 32px;
+    color: #060606;
+    background-color: #f0ffffa3;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.5vw;
 }
 
 .horizontal-masonry-gallery {
@@ -58,5 +61,4 @@ h3 {
     height: 280px;
     flex: 1;
     object-fit: cover;
-    border: 2px solid #f0ffff;
 }
