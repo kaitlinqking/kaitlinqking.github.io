@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#layout {
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#hero {
+    background-image: url("../images/asian-food-hero.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero #hero-content {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    color: #f0ffff;
+}
+
+#hero-content h1 {
+    font-size: 3vw;
+}
+
+#hero-content h4 {
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+h3 {
+    margin-top: 72px;
+    padding: 36px;
+    color: black;
+    background-color: #f0ffff;
+}
+
+.horizontal-masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.horizontal-masonry-gallery img {
+    height: 280px;
+    flex: 1;
+    object-fit: cover;
+    border: 2px solid #f0ffff;
+}
