@@ -28,6 +28,11 @@ body {
     margin-bottom: 2vh;
 }
 
+#hero-content-1 h1 span {
+    color: #50889c;
+    font-weight: 100;
+}
+
 #hero-content-1 #portfolio-cta a {
     color: black;
     text-decoration: none;
@@ -110,16 +115,20 @@ body {
 
 .breadcrumbs a {
     color: black;
+    text-decoration: none;
 }
 
 .breadcrumbs a:hover {
-    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
 }
 
 .gallery-container {
     display: flex;
     justify-content: space-evenly;
     padding: 24px;
+    margin: 36px;
+    gap: 24px;
 }
 
 .gallery-card {
@@ -159,11 +168,8 @@ body {
 
 .gallery-layout {
     max-width: 1000px;
-    margin: 0px auto;
+    margin: 36px auto;
     text-align: center;
-}
-
-.gallery-layout {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
