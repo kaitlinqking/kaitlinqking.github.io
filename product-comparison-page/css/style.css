@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #fdb400;
+}
+
+#layout {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#logo-container {
+    background-color: #ffdb80;
+    text-align: center;
+    height: 180px;
+    position: sticky;
+    top: 0px;
+}
+
+#logo-container img {
+    padding: 20px;
+}
+
+#hero {
+    background-image: url("../images/momofuku.webp");
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    margin-top: 36px;
+}
+
+#description {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
