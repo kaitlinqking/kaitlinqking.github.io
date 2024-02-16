@@ -16,13 +16,14 @@ body {
 #logo-container {
     background-color: #ffdb80;
     text-align: center;
-    height: 180px;
+    height: 8h;
     position: sticky;
     top: 0px;
 }
 
 #logo-container img {
-    padding: 20px;
+    width: 10%;
+    padding: 10px;
 }
 
 #hero {
