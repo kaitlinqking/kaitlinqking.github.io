@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar-1 {
+    background: linear-gradient(
+        to right,
+        #344b33,
+        #7f886e,
+        #344b33
+    );
+    display: flex;
+    align-items: center;
+}
+
+#navbar-1 a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+
+#client1-name {
+    padding: 24px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #49301c;
+}
+
+#navbar-2 {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+#navbar-2 a {
+    text-decoration: none;
+    color: black;
+    padding: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#client2-name {
+    margin-right: auto;
+    padding: 24px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#navbar-2 .cta-button {
+    background-color: #fdd02b;
+    color: black;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+#navbar-3-top {
+    background-color: orange;
+    text-align: center;
+}
+
+#navbar-3-top a {
+    text-decoration: none;
+    color: black;
+    padding: 18px;
+    display: inline-block;
+}
+
+#navbar-3-middle {
+    display: flex;
+    align-items: center;
+}
