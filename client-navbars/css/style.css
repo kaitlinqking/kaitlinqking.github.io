@@ -76,11 +76,19 @@ body {
 #navbar-3-top a {
     text-decoration: none;
     color: black;
-    padding: 18px;
+    padding: 10px;
     display: inline-block;
 }
 
 #navbar-3-middle {
     display: flex;
     align-items: center;
+    background-color: black;
+}
+
+#client3-name {
+    padding: 24px;
+    margin-right: auto;
+    font-size: 30px;
+    color: white;
 }
