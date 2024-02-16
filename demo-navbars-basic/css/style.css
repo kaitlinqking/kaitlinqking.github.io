@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar-top {
+    display: flex;
+    background: linear-gradient(
+        to bottom,
+        #c041c0,
+        #470647
+    );
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-top a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+    /* It's helpful to put padding on links not container because it puts space 
+    in between links. Also it will aid us in the hover state when we change the 
+    background colors. 
+
+    It is behaving as inline-block element because it is a flexbox item 
+    property. Ordinarily, anchors are inline elements, but being a flexbox item 
+    strips away that default behavior.
+    
+    Another note: don't put a div inside of an anchor. You don't want to put a 
+    block element inside an inline element.*/
+}
+
+#navbar-top img {
+    width: 200px
+}
+
+#navbar-top #logo-link {
+    margin-right: auto;
+    /* You are moving all the available space to the RIGHT side of the logo. 
+    This pushes the other links to the far right. We applied this to #logo-link, 
+    not the image, because the image is not in the flexbox container, so it will 
+    not be affected.*/
+}
+
+#navbar-top .cta-button {
+    background-color: white;
+    color: #470647;
+    border-radius: 36px;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+#layout {
+    width: 800px;
+    margin: 48px auto;
+    font-size: 24px;
+    height: 200vh;
+}
+
+#navbar-bottom {
+    background: linear-gradient(
+        to bottom, 
+        #a971a9,
+        #7c397c
+    );
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar-bottom a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 36px;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+}
