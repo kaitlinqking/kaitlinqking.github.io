@@ -11,7 +11,7 @@
 .card-style-3 {
     width: 350px;
     background-color: antiquewhite;
-    padding: 0px 10px 10px;
+    padding: 0px 16px 16px;
     margin: 16px;
     border: 16px solid #ffd609;
     border-radius: 8px;
@@ -41,11 +41,11 @@
 }
 
 .details {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    margin: 4px;
+    margin-top: 6px;
     background: linear-gradient(
         -45deg,
         #d9a51f,
@@ -75,6 +75,7 @@
 
 .data {
     font-size: 12px;
+    font-weight: bold;
     margin-top: 10px;
     border: 2px solid #daa521;
     padding: 4px;
