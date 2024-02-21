@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background: url(../images/background-turtles.jpg)
+}
+
+#navbar {
+    background-color: #219f9f;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #135454;
+    box-shadow: 4px 4px 4px #00000033;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: azure;
+    padding: 24px;
+}
+
+#navbar i {
+    font-size: 12px;
+}
+
+#navbar .cta-button {
+    background-color: #f0b40e;
+    color: #0a3b3b;
+    border-radius: 20px;
+    padding: 16px 20px;
+    font-weight: bold;
+    margin-right: 24px;
+} 
+
+#navbar #company-name {
+    font-family: "Sora", sans-serif;
+    font-size: 28px;
+    padding-right: 0px;
+}
+
+#navbar #caps {
+    font-size: 36px;
+    color: #0a3b3b;
+}
+
+#navbar #logo-container {
+    margin-right: auto;
+}
+
+#navbar #logo-container img {
+    width: 80px;
+}
+
+#hero-1 {
+    background-image: url("../images/hero.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero-1 h1 {
+    color: white;
+    margin-right: 24px;
+}
