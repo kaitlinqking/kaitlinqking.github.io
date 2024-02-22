@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.gallery-1 {
+    flex: 100px;
+    background-color: #b6dcd0;
+    border: 3px solid #5d1546;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.gallery-1 a {
+    text-decoration: none;
+    color: #5d1546;
+    display: block;
+    border-radius: 20px;
+    border: 3px solid black;
+    padding: 12px;
+    margin-top: 32px;
+}
