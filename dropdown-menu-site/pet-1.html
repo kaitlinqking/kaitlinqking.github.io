@@ -6,8 +6,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dropdown Menu Site | Hubert</title>
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        
+        <div id="navbar">
+            <a href="index.html" id="company-name">
+                AdoptMePlz
+            </a>
+            <div id="logo-container">
+                <img src="images/turtle-logo.png" alt="logo">
+            </div>
+            <div class="dropdown-container">
+                <a href="#">Adopt <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="pet-1.html">Charlie</a>
+                    <a href="pet-2.html">Hubert</a>
+                    <a href="pet-3.html">Mary</a>
+                </div>
+            </div>
+            <a href="#">
+                Volunteer
+            </a>
+            <a href="#" class="cta-button">
+                <i class="fa-solid fa-heart"></i>
+                Donate
+            </a>
+        </div>
+        <div class="centered-layout">
+            <div class="pet-container">
+                <h1 class="pet-name">Charlie</h1>
+                <div class="side-by-side">
+                    <div class="left">
+                        <img src="images/charlie.jpg" alt="a happy boy">
+                    </div>
+                    <div class="right">
+                        <a class="cta-button-choose-me" href="#">Choose Me</a>
+                        <div class="about">
+                            <div class="category">
+                                <div>Length:</div>
+                                <div>Weight:</div>
+                                <div>Gender:</div>
+                                <div>Age:</div>
+                            </div>
+                            <div class="value">
+                                <div>10 in.</div>
+                                <div>23 lbs.</div>
+                                <div>M</div>
+                                <div>10</div>
+                            </div>
+                        </div>
+                        <p class="description">
+                            Charlie enjoys hanging around, taking selfies, and 
+                            eating what he shouldn't.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

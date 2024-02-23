@@ -21,9 +21,15 @@ body {
 }
 
 #navbar a {
+    display: inline-block;
     text-decoration: none;
+    font-size: 18px;
     color: azure;
     padding: 24px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
 }
 
 #navbar i {
@@ -37,16 +43,30 @@ body {
     padding: 16px 20px;
     font-weight: bold;
     margin-right: 24px;
+    transition: 
+        text-decoration 0.4s,
+        background-color 0.4s,
+        color 0.4s;
 } 
+
+#navbar .cta-button:hover {
+    text-decoration: none;
+    background-color: #0a3b3b;
+    color: #f0b40e;
+}
 
 #navbar #company-name {
     font-family: "Sora", sans-serif;
-    font-size: 28px;
+    font-size: 36px;
+    font-weight: bold;
     padding-right: 0px;
+    transition: 
+        text-decoration 0.4s,
+        color 0.4s;
 }
 
-#navbar #caps {
-    font-size: 36px;
+#navbar #company-name:hover {
+    text-decoration: none;
     color: #0a3b3b;
 }
 
@@ -58,9 +78,39 @@ body {
     width: 80px;
 }
 
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.3s,
+        visibility 0.3s;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    background-color: #55c4c4;
+    width: 100%;
+    min-width: 200px;
+}
+
+#navbar .dropdown-menu a:hover {
+    text-decoration: none;
+    background-color: #8cdfdf;
+    color: #0a3b3b
+}
+
 #hero-1 {
     background-image: url("../images/hero.jpg");
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -71,4 +121,83 @@ body {
 #hero-1 h1 {
     color: white;
     margin-right: 24px;
+}
+
+.centered-layout {
+    width: 50%;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pet-container {
+    text-align: center;
+    background-color: #219f9fdc;
+    border-radius: 24px;
+    box-shadow: 4px 4px 4px #00000033;
+}
+
+.pet-name {
+    padding-top: 36px;
+    font-size: 36px;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 4px 4px 4px #00000033;
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.left {
+    padding-bottom: 24px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right p {
+    width: 150px;
+    text-align: left;
+}
+
+.cta-button-choose-me {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #5454da;
+    color: azure;
+    border-radius: 20px;
+    padding: 16px 20px;
+    margin-bottom: 36px;
+    transition: 
+        background-color 0.5s,
+        color 0.5s;
+}
+
+.cta-button-choose-me:hover {
+    background-color: azure;
+    color: #5454da;
+}
+
+.about {
+    display: flex;
+    text-align: left;
+}
+
+.category {
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.description {
+    font-style: italic;
 }
