@@ -39,20 +39,25 @@ body {
 #navbar .cta-button {
     background-color: #f0b40e;
     color: #0a3b3b;
+    box-shadow: 2px 2px 4px #2c5151;
     border-radius: 20px;
     padding: 16px 20px;
     font-weight: bold;
     margin-right: 24px;
     transition: 
-        text-decoration 0.4s,
-        background-color 0.4s,
-        color 0.4s;
+        text-decoration 0.25s,
+        background-color 0.25s,
+        color 0.25s;
+        box-shadow: 0.25s;
+        transform: 0.25s;
 } 
 
 #navbar .cta-button:hover {
     text-decoration: none;
     background-color: #0a3b3b;
     color: #f0b40e;
+    box-shadow: 2px 2px 2px #2c5151;
+    transform: translateY(3px);
 }
 
 #navbar #company-name {
@@ -106,6 +111,10 @@ body {
     text-decoration: none;
     background-color: #8cdfdf;
     color: #0a3b3b
+}
+
+#navbar .dropdown-menu a:active {
+    font-weight: bold;
 }
 
 #hero-1 {
@@ -162,6 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 24px;
 }
 
 .right p {
