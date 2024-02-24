@@ -11,7 +11,7 @@ h1 {
     text-align: center;
 }
 
-#cards-container {
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -20,19 +20,102 @@ h1 {
 .gallery-1 {
     flex: 100px;
     background-color: #b6dcd0;
-    border: 3px solid #5d1546;
+    border: 3px solid black;
     margin: 20px;
     padding: 20px;
     border-radius: 24px;
     text-align: center;
+    transition: 
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
+}
+
+.gallery-1:hover {
+    background-color: #7bbaa6;
+    box-shadow: 4px 4px 4px #07454c33;
+    transform: translateY(-6px);
+}
+
+.gallery-1:hover a {
+    background-color: #a2abe3;
 }
 
 .gallery-1 a {
     text-decoration: none;
-    color: #5d1546;
+    color: black;
     display: block;
-    border-radius: 20px;
+    border-radius: 50px;
     border: 3px solid black;
     padding: 12px;
     margin-top: 32px;
+    transition:
+        background-color 0.5s;
+}
+
+.gallery-2 {
+    flex: 100px;
+    background-color: #faccd3;
+    border-radius: 50px 8px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition:
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s;
+}
+
+.gallery-2:hover {
+    background-color: #e37283;
+    box-shadow: -4px 4px 6px #64264b33;
+    transform: translateX(6px);
+}
+
+.gallery-2 .card-content img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px #af1f7533;
+}
+
+.gallery-2 .card-content p {
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.5s;
+}
+
+.gallery-2:hover .card-content p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery-3 {
+    flex: 100px;
+    height: 270px;
+    background-color: #ccd4fa;
+    border: 3px solid #596abe;
+    border-radius: 24px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 
+        transform 1.5s,
+        background-color 1.5s;
+}
+
+.gallery-3:hover {
+    transform: rotate(360deg);
+    background-color: #99a4da;
+}
+
+.gallery-3 h2 {
+    font-size: 48px;
 }
