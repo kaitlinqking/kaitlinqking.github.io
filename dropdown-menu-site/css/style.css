@@ -23,9 +23,9 @@ body {
 #navbar a {
     display: inline-block;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: azure;
-    padding: 24px;
+    padding: 18px;
 }
 
 #navbar a:hover {
@@ -45,11 +45,11 @@ body {
     font-weight: bold;
     margin-right: 24px;
     transition: 
-        text-decoration 0.25s,
-        background-color 0.25s,
-        color 0.25s;
-        box-shadow: 0.25s;
-        transform: 0.25s;
+        text-decoration 0.3s,
+        background-color 0.3s,
+        color 0.3s,
+        box-shadow 0.3s,
+        transform 0.3s;
 } 
 
 #navbar .cta-button:hover {
@@ -61,10 +61,13 @@ body {
 }
 
 #navbar #company-name {
+    display: flex;
+    align-items: center;
     font-family: "Sora", sans-serif;
     font-size: 36px;
     font-weight: bold;
     padding-right: 0px;
+    margin-right: auto;
     transition: 
         text-decoration 0.4s,
         color 0.4s;
@@ -73,10 +76,6 @@ body {
 #navbar #company-name:hover {
     text-decoration: none;
     color: #0a3b3b;
-}
-
-#navbar #logo-container {
-    margin-right: auto;
 }
 
 #navbar #logo-container img {
@@ -115,6 +114,7 @@ body {
 
 #navbar .dropdown-menu a:active {
     font-weight: bold;
+    background-color: #51b6b6;
 }
 
 #hero-1 {
@@ -129,7 +129,8 @@ body {
 
 #hero-1 h1 {
     color: white;
-    margin-right: 24px;
+    font-size: 60px;
+    margin-right: 100px;
 }
 
 .centered-layout {
@@ -186,16 +187,21 @@ body {
     background-color: #5454da;
     color: azure;
     border-radius: 20px;
+    box-shadow: 2px 2px 4px #2c5151;
     padding: 16px 20px;
     margin-bottom: 36px;
     transition: 
-        background-color 0.5s,
-        color 0.5s;
+        background-color 0.3s,
+        color 0.3s,
+        box-shadow 0.3s,
+        transform 0.3s;
 }
 
 .cta-button-choose-me:hover {
     background-color: azure;
     color: #5454da;
+    box-shadow: 2px 2px 2px #2c5151;
+    transform: translateY(3px);
 }
 
 .about {
@@ -210,4 +216,136 @@ body {
 
 .description {
     font-style: italic;
+}
+
+/* first breakpoint */
+@media screen and (max-width: 812px) and (min-width: 581px) {
+    #navbar a {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #navbar #company-name {
+        font-size: 30px;
+    }
+
+    #navbar #logo-container img {
+        width: 60px;
+    }
+
+    #hero-1 h1 {
+        font-size: 50px;
+    }
+
+    .pet-container {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .right {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .left {
+        width: 400px;
+    }
+
+    .centered-layout {
+        min-width: 600px;
+    }
+
+    .pet-name {
+        font-size: 32px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .right p {
+        width: 400px;
+        text-align: center;
+    }
+}
+
+/* second breakpoint */
+@media screen and (max-width: 580px) and (min-width: 479px) {
+    #navbar a {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    #navbar .cta-button {
+        padding: 12px 16px;
+    }
+
+    #navbar .cta-button i {
+        display: none;
+    }
+
+    #navbar #company-name {
+        font-size: 24px;
+    }
+
+    #navbar #logo-container img {
+        width: 60px;
+    }
+
+    #hero-1 h1 {
+        font-size: 30px;
+    }
+
+    .pet-container {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+    }
+
+    .side-by-side {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .right {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .left {
+        width: 300px;
+    }
+
+    .centered-layout {
+        min-width: 475px;
+    }
+
+    .pet-name {
+        font-size: 32px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .right p {
+        width: 300px;
+        text-align: center;
+    }
 }
