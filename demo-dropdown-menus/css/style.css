@@ -74,3 +74,70 @@ body {
     background: slateblue;
 }
 
+
+/* New code for hamburger menu */
+#sidebar {
+    display: flex;
+}
+
+#hamburger-container {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+#hamburger-icon {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#close-container {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    #hamburger-container {
+        display: block;
+    }
+
+    #sidebar {
+        position: absolute;
+        background: darkslateblue;
+        right: -50vw;
+        top: 0px;
+        flex-direction: column;
+        width: 50vw;
+        height: 100vh;
+        transition: right 0.25s;
+    }
+
+    #sidebar.active {
+        right: 0px;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdown-container i {
+        display: none;
+    }
+
+    #navbar .dropdown-menu a {
+        padding-left: 60px;
+    }
+
+    #close-container {
+        display: block;
+        color: white;
+        font-size: 30px;
+        text-align: right;
+        padding: 24px;
+    }
+
+    #close-button {
+        cursor: pointer;
+    }
+}
