@@ -4,25 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: "Urbanist", sans-serif;
-    background: linear-gradient(to bottom, #9F1F63, #CD8BB8);
+    background-color: #CD8BB8;
 }
 
-#main-layout {
-    display: grid;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-areas:
-        "navbar     navbar      navbar      navbar"
-        "hero-1     hero-1      hero-1      hero-1"
-        ".          box-1       box-2       ."
-        ".          box-3       box-4       ."
-        ".          box-5       box-6       ."
-        "footer-1   footer-1    footer-1    footer-1"
-        "footer-2   footer-2    footer-2    footer-2";
-}
-
+/* Navigation */
 .navbar {
     grid-area: navbar;
     background-color: #deb4d1;
@@ -63,6 +55,113 @@ body {
     border-bottom: none;
 }
 
+.navbar #logo:hover {
+    background-color: transparent;
+}
+
+.footer-1 {
+    grid-area: footer-1;
+    margin-top: 100px;
+}
+
+.footer-1 .icon-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    background-color: #deb4d1;
+    padding: 100px;
+}
+
+.footer-1 .icon-layout .icon-container {
+    text-align: center;
+    max-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-1 .icon-layout .icon-container .img-container img {
+    width: 100%;
+}
+
+.footer-1 .icon-layout .icon-container .cta-icon {
+    text-decoration: none;
+    background-color: #9F1F63;
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    width: 150px;
+    padding: 16px 28px;
+    border-radius: 36px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.footer-1 .icon-layout .icon-container .cta-icon:hover {
+    background-color: white;
+    color: #573467;
+}
+
+.footer-2 {
+    grid-area: footer-2;
+    background-color: #573467;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+}
+
+.footer-2 #footer-logo-container {
+    width: 600px;
+    padding-bottom: 24px;
+}
+
+.footer-2 #footer-logo-container img {
+    width: 100%;
+}
+
+.footer-2 .search-field {
+    background-color: white;
+    color: black; 
+    display: block;
+    width: 500px;
+    padding: 14px 34px;
+    border-radius: 16px;
+}
+
+.footer-2 #back {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-2 #back i {
+    font-size: 50px;
+    padding: 18px;
+}
+
+/* Home Page */
+#main-layout {
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas:
+        "navbar     navbar      navbar      navbar"
+        "hero-1     hero-1      hero-1      hero-1"
+        ".          box-1       box-2       ."
+        ".          box-3       box-4       ."
+        ".          box-5       box-6       ."
+        "footer-1   footer-1    footer-1    footer-1"
+        "footer-2   footer-2    footer-2    footer-2";
+}
+
 #hero-1 {
     grid-area: hero-1;
     background-image: url("../images/hero-1.jpg");
@@ -73,6 +172,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 100px;
 }
 
 #hero-1-content {
@@ -95,7 +195,7 @@ body {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 24px;
+    border-radius: 36px;
     text-align: center;
     transition:
         background-color 0.3s,
@@ -158,7 +258,7 @@ body {
     max-width: 300px;
     font-weight: bold;
     padding: 20px 32px;
-    border-radius: 24px;
+    border-radius: 36px;
     margin-top: 12px;
     transition:
         background-color 0.3s,
@@ -167,5 +267,107 @@ body {
 
 .box-text .cta-button-main:hover {
     background-color: #CD8BB8;
+    color: #573467;
+}
+
+/* Menu Page */
+#menu-layout {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas:
+        "navbar     navbar      navbar"
+        ".          featured    ."
+        ".          favorites   ."
+        "footer-1   footer-1    footer-1"
+        "footer-2   footer-2    footer-2";
+}
+
+#featured {
+    grid-area: featured;
+    max-width: 1500px;
+    margin: 60px auto;
+}
+
+#featured h2 {
+    text-align: center;
+}
+
+#featured-container {
+    display: flex;
+    justify-content: center;
+}
+
+#featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#featured-info {
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#featured-info #featured-description {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-style: italic;
+}
+
+#featured-info .price {
+    font-weight: bold;
+}
+
+#our-favorites {
+    grid-area: favorites;
+}
+
+#our-favorites h2 {
+    text-align: center;
+}
+
+#card-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    margin: 0px auto;
+    gap: 36px;
+}
+
+#card-gallery .card {
+    max-width: 350px;
+    text-align: center;
+    background-color: white;
+}
+
+#card-gallery .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#our-favorites #cta-full-menu {
+    text-decoration: none;
+    background-color: #9F1F63;
+    color: white;
+    display: block;
+    width: 200px;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 32px;
+    border-radius: 36px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+#our-favorites #cta-full-menu:hover {
+    background-color: white;
     color: #573467;
 }
