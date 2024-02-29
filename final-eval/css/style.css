@@ -12,7 +12,7 @@ body {
 
 #layout {
     width: 70%;
-    min-width: 500px;
+    min-width: 450px;
     margin: 0px auto;
     text-align: center;
 }
@@ -86,26 +86,22 @@ body {
     background-color: #24a124;
     border: 3px solid #24a124;
     transition: 
-        background-color 0.3s,
-        color 0.3s;
+        background-color 0.3s;
 }
 
 #yes:hover {
     background-color: transparent;
-    color: white;
 }
 
 #no {
     background-color: #c34242;
     border: 3px solid #c34242;
     transition: 
-        background-color 0.3s,
-        color 0.3s;
+        background-color 0.3s;
 }
 
 #no:hover {
     background-color: transparent;
-    color: white;
 }
 
 .cta-button {
@@ -121,3 +117,33 @@ body {
     font-size: 20px;
     padding: 18px;
 }
+
+/* First Breakpoint */
+@media screen and (max-width: 959px) and (min-width: 758px) {
+    #side-by-side {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 210px;
+        font-size: 14px;
+        padding: 20px 44px;
+    }
+}
+
+/* Second Breakpoint  */
+@media screen and (max-width: 757px) {
+    #side-by-side {
+        flex-direction: column;
+    }
+
+    #rsvp-side-by-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #super-bowl {
+        font-size: 32px;
+    }
+}
+
