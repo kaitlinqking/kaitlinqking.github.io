@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -40,14 +41,20 @@ body {
     background-color: #CD8BB8;
 }
 
-.navbar #logo img {
-    width: 150px;
-}
-
 .navbar #logo {
     margin-right: auto;
-    padding: 10px;
+    padding: 6px;
     border-bottom: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar #logo #logo-pic-1 {
+    width: 125px;
+}
+
+.navbar #logo #logo-pic-2 {
+    width: 400px;
 }
 
 .navbar #logo:hover {
@@ -65,7 +72,7 @@ body {
     justify-content: center;
     gap: 120px;
     background-color: #deb4d1;
-    padding: 100px;
+    padding: 50px;
 }
 
 .footer-1 .icon-layout .icon-container {
@@ -87,8 +94,8 @@ body {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
-    width: 150px;
+    font-size: 14px;
+    width: 160px;
     padding: 16px 28px;
     border-radius: 36px;
     transition:
@@ -112,7 +119,7 @@ body {
 }
 
 .footer-2 #footer-logo-container {
-    width: 600px;
+    width: 525px;
     padding: 24px;
 }
 
@@ -120,13 +127,21 @@ body {
     width: 100%;
 }
 
+.footer-2 #copyright {
+    padding: 24px;
+}
+
 .footer-2 .search-field {
     background-color: white;
     color: black; 
     display: block;
     width: 500px;
-    padding: 14px 34px;
+    padding: 14px 28px;
     border-radius: 16px;
+}
+
+.footer-2 .search-field i {
+    padding-right: 6px;
 }
 
 .footer-2 #back {
@@ -135,6 +150,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 24px;
+    transition: 
+        color 0.3s;
+}
+
+.footer-2 #back:hover i {
+    color: #F5D965;
 }
 
 .footer-2 #back i {
@@ -180,7 +202,9 @@ body {
 }
 
 #hero-1-content h1 {
+    font-family: "Lobster Two", sans-serif;
     color: white;
+    text-shadow: 2px 2px #573467;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 68px;
@@ -249,6 +273,11 @@ body {
 
 .box-text h3 {
     font-size: 28px;
+    font-family: "Lobster Two", sans-serif;
+    background-color: #F5D965;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .box-text p {
@@ -290,11 +319,22 @@ body {
 #featured {
     grid-area: featured;
     max-width: 1500px;
-    margin: 60px auto;
+    margin: 70px auto;
 }
 
-#featured h2 {
+#featured .centered-heading {
+    display: flex;
+    justify-content: center;
+}
+
+#featured .centered-heading h2 {
     text-align: center;
+    font-size: 32px;
+    font-family: "Lobster Two", sans-serif;
+    background-color: #F5D965;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 300px;
 }
 
 #featured-container {
@@ -332,8 +372,19 @@ body {
     grid-area: favorites;
 }
 
-#our-favorites h2 {
+#our-favorites .centered-heading {
+    display: flex;
+    justify-content: center;
+}
+
+#our-favorites .centered-heading h2 {
     text-align: center;
+    font-size: 32px;
+    font-family: "Lobster Two", sans-serif;
+    background-color: #F5D965;
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 300px;
 }
 
 #card-gallery {
@@ -345,7 +396,6 @@ body {
 }
 
 #card-gallery .card {
-    max-width: 350px;
     text-align: center;
     background-color: white;
 }
@@ -383,14 +433,6 @@ body {
         flex-direction: column;
         gap: 20px;
     }
-
-    .footer-2 #copyright {
-        padding: 24px;
-    }
-
-    .footer-2 #back {
-        padding-bottom: 24px;
-    }
 }
 
 /* Second Breakpoint */
@@ -408,14 +450,6 @@ body {
     .footer-2 {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .footer-2 #copyright {
-        padding: 24px;
-    }
-
-    .footer-2 #back {
-        padding-bottom: 24px;
     }
 }
 
@@ -438,14 +472,6 @@ body {
     .footer-2 {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .footer-2 #copyright {
-        padding: 24px;
-    }
-
-    .footer-2 #back {
-        padding-bottom: 24px;
     }
 }
 
@@ -498,16 +524,8 @@ body {
         gap: 20px;
     }
 
-    .footer-2 #copyright {
-        padding: 24px;
-    }
-
     .footer-2 .search-field {
         width: 400px;
-    }
-
-    .footer-2 #back {
-        padding-bottom: 24px;
     }
 
     .box-text {
