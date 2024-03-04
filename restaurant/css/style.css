@@ -57,6 +57,11 @@ body {
     width: 400px;
 }
 
+.navbar #logo #logo-pic-3 {
+    width: 150px;
+    display: none;
+}
+
 .navbar #logo:hover {
     background-color: transparent;
 }
@@ -151,8 +156,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 24px;
-    transition: 
-        color 0.3s;
 }
 
 .footer-2 #back:hover i {
@@ -162,6 +165,8 @@ body {
 .footer-2 #back i {
     font-size: 50px;
     padding: 18px;
+    transition: 
+        color 0.3s;
 }
 
 /* Home Page */
@@ -184,10 +189,10 @@ body {
         linear-gradient(
             to right,
             #81808029,
-            #cd8bb84c
+            #be62a16d
         ),
         url("../images/hero-1.jpg");
-    height: 84vh;
+    height: 90vh;
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -274,10 +279,11 @@ body {
 .box-text h3 {
     font-size: 28px;
     font-family: "Lobster Two", sans-serif;
-    background-color: #F5D965;
+    border-top: 4px solid #F5D965;
+    border-right: 4px solid #F5D965;
     padding: 16px 32px;
     width: 100%;
-    max-width: 300px;
+    max-width: 450px;
 }
 
 .box-text p {
@@ -289,7 +295,7 @@ body {
     background-color: #9F1F63;
     color: white;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     font-weight: bold;
     padding: 20px 32px;
     border-radius: 36px;
@@ -331,10 +337,12 @@ body {
     text-align: center;
     font-size: 32px;
     font-family: "Lobster Two", sans-serif;
-    background-color: #F5D965;
+    color: white;
+    border-top: 4px solid #F5D965;
+    border-right: 4px solid #F5D965;
     padding: 16px 32px;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 #featured-container {
@@ -346,6 +354,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 #featured-info {
@@ -381,10 +390,12 @@ body {
     text-align: center;
     font-size: 32px;
     font-family: "Lobster Two", sans-serif;
-    background-color: #F5D965;
+    color: white;
+    border-top: 4px solid #F5D965;
+    border-right: 4px solid #F5D965;
     padding: 16px 32px;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 #card-gallery {
@@ -428,7 +439,7 @@ body {
 }
 
 /* First Breakpoint  */
-@media screen and (max-width: 1399px) and (min-width: 1245px) {
+@media screen and (max-width: 1399px) and (min-width: 1295px) {
     .footer-2 {
         flex-direction: column;
         gap: 20px;
@@ -436,7 +447,21 @@ body {
 }
 
 /* Second Breakpoint */
-@media screen and (max-width: 1244px) and (min-width: 1118px) {
+@media screen and (max-width: 1294px) and (min-width: 1118px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        flex: 150px;
+        text-align: center;
+    }
+
+    .navbar #logo {
+        flex: 100%;
+        justify-content: center;
+    }
+
     #card-gallery {
         grid-template-columns: 1fr 1fr;
         width: 800px;
@@ -455,6 +480,20 @@ body {
 
 /* Third Breakpoint  */
 @media screen and (max-width: 1117px) and (min-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        flex: 150px;
+        text-align: center;
+    }
+
+    .navbar #logo {
+        flex: 100%;
+        justify-content: center;
+    }
+
     .box-text {
         padding: 24px;
     }
@@ -476,7 +515,110 @@ body {
 }
 
 /* Fourth Breakpoint  */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 799px) and (min-width: 600px) {
+    #main-layout {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-areas:
+            "navbar     navbar      navbar"      
+            "hero-1     hero-1      hero-1"      
+            ".          box-2       ."
+            ".          box-1       ."   
+            ".          box-3       ."
+            ".          box-4       ."    
+            ".          box-6       ."
+            ".          box-5       ."
+            "footer-1   footer-1    footer-1"   
+            "footer-2   footer-2    footer-2";    
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        flex: 200px;
+        text-align: center;
+    }
+
+    .navbar #logo #logo-pic-1 {
+        display: none;
+    }
+
+    .navbar #logo #logo-pic-2 {
+        display: none;
+    }
+
+    .navbar #logo #logo-pic-3 {
+        display: block;
+    }
+
+    .navbar #logo {
+        flex: 100%;
+        justify-content: center;
+    }
+
+    #hero-1 {
+        align-items: center;
+        height: 50vh;
+    }
+
+    #hero-1 h1 {
+        font-size: 48px;
+    }
+
+    #hero-1-content #cta-button-1 {
+        font-size: 14px;
+        width: 60%;
+        margin: 36px auto;
+    }
+
+    .footer-1 .icon-layout {
+        flex-wrap: wrap;
+    }
+
+    .footer-2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-2 .search-field {
+        width: 400px;
+    }
+
+    .box-text {
+        height: 400px;
+        padding: 24px;
+    }
+
+    .box-img {
+        height: 400px;
+    }
+
+    #featured-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #featured-img img {
+        height: 300px;
+        width: 450px;
+        object-fit: cover;
+    }
+
+    #featured-info {
+        height: 300px;
+        width: 450px;
+    }
+
+    #card-gallery {
+        grid-template-columns: 1fr;
+        width: 400px;
+        margin: 0px auto;
+    }
+}
+
+/* Fifth Breakpoint */
+@media screen and (max-width: 599px) {
     #main-layout {
         grid-template-columns: 5% 90% 5%;
         grid-template-areas:
@@ -500,9 +642,27 @@ body {
         flex: 150px;
         text-align: center;
     }
-    
+
+    .navbar #logo #logo-pic-1 {
+        display: none;
+    }
+
+    .navbar #logo #logo-pic-2 {
+        display: none;
+    }
+
+    .navbar #logo #logo-pic-3 {
+        display: block;
+    }
+
+    .navbar #logo {
+        flex: 100%;
+        justify-content: center;
+    }
+
     #hero-1 {
         align-items: center;
+        height: 50vh;
     }
 
     #hero-1 h1 {
@@ -510,7 +670,7 @@ body {
     }
 
     #hero-1-content #cta-button-1 {
-        font-size: 16px;
+        font-size: 14px;
         width: 60%;
         margin: 36px auto;
     }
