@@ -17,17 +17,20 @@
                         src="images/logo.png" 
                         alt="logo"
                     >
-                    <img 
-                        id="logo-pic-2"
-                        src="images/logo.png"
-                        alt="logo"
-                    >
                 </a>
-                <a href="index.html">Home</a>
-                <a href="#">About</a>
-                <a href="menu.html">Menu</a>
-                <a href="#">Locations</a>
-                <a href="#">Reservations</a>
+                <div id="hamburger-container">
+                    <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+                </div>
+                <div id="sidebar">
+                    <div id="close-container">
+                        <i id="close-button" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Reservations</a>
+                </div>
             </div>
             <div id="featured">
                 <div class="centered-heading">
@@ -243,5 +246,6 @@
                 </a>
             </div>
         </div>
+        <script src="js/hamburger.js"></script>
     </body>
 </html>

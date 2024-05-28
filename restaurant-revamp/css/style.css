@@ -53,11 +53,6 @@ body {
     width: 200px;
 }
 
-.navbar #logo #logo-pic-2 {
-    width: 150px;
-    display: none;
-}
-
 .navbar #logo:hover {
     background-color: transparent;
 }
@@ -183,7 +178,7 @@ body {
     grid-area: hero-1;
     background: 
         url("../images/hero-1.jpg");
-    height: 90vh;
+    height: 88vh;
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -199,7 +194,7 @@ body {
 
 #hero-1-content h1 {
     font-family: "Lilita One", sans-serif;
-    color: white;
+    color: #fffafa;
     text-shadow: 6px 6px #3a266b;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -429,6 +424,26 @@ body {
     color: black;
 }
 
+/* Hamburger Menu */
+#sidebar {
+    display: flex;
+}
+
+#hamburger-container {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+#hamburger-icon {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#close-container {
+    display: none;
+}
+
 /* First Breakpoint  */
 @media screen and (max-width: 1399px) and (min-width: 1295px) {
     .footer-2 {
@@ -439,15 +454,6 @@ body {
 
 /* Second Breakpoint */
 @media screen and (max-width: 1294px) and (min-width: 1118px) {
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    .navbar a {
-        flex: 150px;
-        text-align: center;
-    }
-
     .navbar #logo {
         flex: 100%;
         justify-content: center;
@@ -473,6 +479,7 @@ body {
 @media screen and (max-width: 1117px) and (min-width: 800px) {
     .navbar {
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .navbar a {
@@ -506,141 +513,29 @@ body {
 }
 
 /* Fourth Breakpoint  */
-@media screen and (max-width: 799px) and (min-width: 600px) {
+@media screen and (max-width: 799px) {
     #main-layout {
-        grid-template-columns: 5% 90% 5%;
-        grid-template-areas:
-            "navbar     navbar      navbar"      
-            "hero-1     hero-1      hero-1"      
-            ".          box-2       ."
-            ".          box-1       ."   
-            ".          box-3       ."
-            ".          box-4       ."    
-            ".          box-6       ."
-            ".          box-5       ."
-            "footer-1   footer-1    footer-1"   
-            "footer-2   footer-2    footer-2";    
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    .navbar a {
-        flex: 200px;
-        text-align: center;
-    }
-
-    .navbar #logo #logo-pic-1 {
-        display: none;
-    }
-
-    .navbar #logo #logo-pic-2 {
-        display: block;
-    }
-
-    .navbar #logo {
-        flex: 100%;
-        justify-content: center;
-    }
-
-    #hero-1 {
-        align-items: center;
-        height: 30vh;
-    }
-
-    #hero-1 h1 {
-        font-size: 48px;
-    }
-
-    #hero-1-content #cta-button-1 {
-        font-size: 14px;
-        width: 60%;
-        margin: 36px auto;
-    }
-
-    .footer-1 .icon-layout {
-        flex-wrap: wrap;
-    }
-
-    .footer-2 {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-2 .search-field {
-        width: 400px;
-    }
-
-    .box-text {
-        height: 400px;
-        padding: 24px;
-    }
-
-    .box-img {
-        height: 400px;
-    }
-
-    #featured-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #featured-img img {
-        height: 300px;
-        width: 450px;
-        object-fit: cover;
-    }
-
-    #featured-info {
-        height: 300px;
-        width: 450px;
-    }
-
-    #card-gallery {
         grid-template-columns: 1fr;
-        width: 400px;
-        margin: 0px auto;
-    }
-}
-
-/* Fifth Breakpoint */
-@media screen and (max-width: 599px) {
-    #main-layout {
-        grid-template-columns: 5% 90% 5%;
         grid-template-areas:
-            "navbar     navbar      navbar"      
-            "hero-1     hero-1      hero-1"      
-            ".          box-2       ."
-            ".          box-1       ."   
-            ".          box-3       ."
-            ".          box-4       ."    
-            ".          box-6       ."
-            ".          box-5       ."
-            "footer-1   footer-1    footer-1"   
-            "footer-2   footer-2    footer-2";    
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    .navbar a {
-        flex: 150px;
-        text-align: center;
-    }
-
-    .navbar #logo #logo-pic-1 {
-        display: none;
-    }
-    
-    .navbar #logo #logo-pic-2 {
-        display: block;
+            "navbar"      
+            "hero-1"      
+            "box-2"
+            "box-1"   
+            "box-3"
+            "box-4"    
+            "box-6"
+            "box-5"
+            "footer-1"   
+            "footer-2";    
     }
 
     .navbar #logo {
         flex: 100%;
-        justify-content: center;
+        justify-content: left;
+    }
+
+    .navbar a {
+        border-radius: 0px;
     }
 
     #hero-1 {
@@ -667,10 +562,6 @@ body {
         gap: 20px;
     }
 
-    .footer-2 #footer-logo-container img {
-        width: 98%;
-    }
-
     .footer-2 .search-field {
         width: 400px;
     }
@@ -687,7 +578,6 @@ body {
     #featured-container {
         flex-direction: column;
         align-items: center;
-        max-width: 400px;
     }
 
     #featured-img img {
@@ -705,5 +595,46 @@ body {
         grid-template-columns: 1fr;
         width: 400px;
         margin: 0px auto;
+    }
+
+    #hamburger-container {
+        display: block;
+    }
+
+    #hamburger-icon {
+        color: black;
+    }
+
+    #sidebar {
+        position: absolute;
+        background: #ecb547;
+        right: -50vw;
+        top: 0px;
+        flex-direction: column;
+        width: 50vw;
+        height: 100vh;
+        transition: right 0.25s;
+    }
+
+    #sidebar.active {
+        right: 0px;
+    }
+
+    #sidebar a {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #close-container {
+        display: block;
+        color: black;
+        font-size: 30px;
+        text-align: right;
+        padding: 24px;
+    }
+
+    #close-button {
+        cursor: pointer;
     }
 }
