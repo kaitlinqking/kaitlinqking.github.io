@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,13 +12,13 @@ html {
 body {
     margin: 0px;
     font-family: "Urbanist", sans-serif;
-    background-color: #573467;
+    background-color: #3a266b;
 }
 
 /* Navigation */
 .navbar {
     grid-area: navbar;
-    background-color: #deb4d1;
+    background-color: #ecb547;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -38,26 +38,22 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #CD8BB8;
+    background-color: #d8a338;
 }
 
 .navbar #logo {
     margin-right: auto;
-    padding: 6px;
+    padding: 15px;
     border-bottom: none;
     display: flex;
     align-items: center;
 }
 
 .navbar #logo #logo-pic-1 {
-    width: 125px;
+    width: 200px;
 }
 
 .navbar #logo #logo-pic-2 {
-    width: 400px;
-}
-
-.navbar #logo #logo-pic-3 {
     width: 150px;
     display: none;
 }
@@ -76,7 +72,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 120px;
-    background-color: #deb4d1;
+    background-color: #efe9ff;
     padding: 50px;
 }
 
@@ -94,7 +90,7 @@ body {
 
 .footer-1 .icon-layout .icon-container .cta-icon {
     text-decoration: none;
-    background-color: #9F1F63;
+    background-color: #de3b61;
     color: white;
     display: block;
     text-align: center;
@@ -109,13 +105,13 @@ body {
 }
 
 .footer-1 .icon-layout .icon-container .cta-icon:hover {
-    background-color: #CD8BB8;
-    color: #573467;
+    background-color: #ee8fa5;
+    color: black;
 }
 
 .footer-2 {
     grid-area: footer-2;
-    background-color: #deb4d1;
+    background-color: #ecb547;
     color: black;
     display: flex;
     justify-content: center;
@@ -124,7 +120,7 @@ body {
 }
 
 .footer-2 #footer-logo-container {
-    width: 525px;
+    width: 300px;
     padding: 24px;
 }
 
@@ -159,7 +155,7 @@ body {
 }
 
 .footer-2 #back:hover i {
-    color: #F5D965;
+    color: #54491d;
 }
 
 .footer-2 #back i {
@@ -186,11 +182,6 @@ body {
 #hero-1 {
     grid-area: hero-1;
     background: 
-        linear-gradient(
-            to right,
-            #81808029,
-            #be62a16d
-        ),
         url("../images/hero-1.jpg");
     height: 90vh;
     background-size: cover;
@@ -207,9 +198,9 @@ body {
 }
 
 #hero-1-content h1 {
-    font-family: "Lobster Two", sans-serif;
+    font-family: "Lilita One", sans-serif;
     color: white;
-    text-shadow: 2px 2px #573467;
+    text-shadow: 6px 6px #3a266b;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 68px;
@@ -217,7 +208,7 @@ body {
 }
 
 #hero-1-content #cta-button-1 {
-    background-color: #9F1F63;
+    background-color: #de3b61;
     text-decoration: none;
     display: block;
     margin-top: 48px;
@@ -233,8 +224,8 @@ body {
 }
 
 #hero-1-content #cta-button-1:hover {
-    background-color: #CD8BB8;
-    color: #573467;
+    background-color: #ee8fa5;
+    color: black;
 }
 
 #box-1 {
@@ -278,9 +269,9 @@ body {
 
 .box-text h3 {
     font-size: 28px;
-    font-family: "Lobster Two", sans-serif;
-    border-top: 4px solid #F5D965;
-    border-right: 4px solid #F5D965;
+    font-family: "Lilita One", sans-serif;
+    border-top: 4px solid #ecb547;
+    border-right: 4px solid #ecb547;
     padding: 16px 32px;
     width: 100%;
     max-width: 450px;
@@ -292,7 +283,7 @@ body {
 
 .box-text .cta-button-main {
     text-decoration: none;
-    background-color: #9F1F63;
+    background-color: #de3b61;
     color: white;
     width: 100%;
     max-width: 400px;
@@ -306,8 +297,8 @@ body {
 }
 
 .box-text .cta-button-main:hover {
-    background-color: #CD8BB8;
-    color: #573467;
+    background-color: #ee8fa5;
+    color: black;
 }
 
 /* Menu Page */
@@ -336,10 +327,10 @@ body {
 #featured .centered-heading h2 {
     text-align: center;
     font-size: 32px;
-    font-family: "Lobster Two", sans-serif;
+    font-family: "Lilita One", sans-serif;
     color: white;
-    border-top: 4px solid #F5D965;
-    border-right: 4px solid #F5D965;
+    border-top: 4px solid #ecb547;
+    border-right: 4px solid #ecb547;
     padding: 16px 32px;
     width: 100%;
     max-width: 400px;
@@ -389,10 +380,10 @@ body {
 #our-favorites .centered-heading h2 {
     text-align: center;
     font-size: 32px;
-    font-family: "Lobster Two", sans-serif;
+    font-family: "Lilita One", sans-serif;
     color: white;
-    border-top: 4px solid #F5D965;
-    border-right: 4px solid #F5D965;
+    border-top: 4px solid #ecb547;
+    border-right: 4px solid #ecb547;
     padding: 16px 32px;
     width: 100%;
     max-width: 400px;
@@ -419,7 +410,7 @@ body {
 
 #our-favorites #cta-full-menu {
     text-decoration: none;
-    background-color: #9F1F63;
+    background-color: #de3b61;
     color: white;
     display: block;
     width: 200px;
@@ -434,8 +425,8 @@ body {
 }
 
 #our-favorites #cta-full-menu:hover {
-    background-color: #CD8BB8;
-    color: #573467;
+    background-color: #ee8fa5;
+    color: black;
 }
 
 /* First Breakpoint  */
@@ -545,10 +536,6 @@ body {
     }
 
     .navbar #logo #logo-pic-2 {
-        display: none;
-    }
-
-    .navbar #logo #logo-pic-3 {
         display: block;
     }
 
@@ -559,7 +546,7 @@ body {
 
     #hero-1 {
         align-items: center;
-        height: 50vh;
+        height: 30vh;
     }
 
     #hero-1 h1 {
@@ -646,12 +633,8 @@ body {
     .navbar #logo #logo-pic-1 {
         display: none;
     }
-
+    
     .navbar #logo #logo-pic-2 {
-        display: none;
-    }
-
-    .navbar #logo #logo-pic-3 {
         display: block;
     }
 
